@@ -2,22 +2,22 @@
 $:.push File.expand_path("../lib", __FILE__)
 require "css3buttons/version"
 
-Gem::Specification.new do |s|
-  s.name        = "css3buttons"
-  s.version     = Css3buttons::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Nicholas Bruning"]
-  s.email       = ["nicholas@bruning.com.au"]
-  s.homepage    = "https://github.com/thetron/css3buttons_rails_helpers"
-  s.summary     = %q{Easy, beautiful buttons, the CSS3 way.}
-  s.description = %q{Rails helper methods and generators for the css3buttons by Michael Henriksen.}
+Gem::Specification.new do |gem|
+  gem.name        = "css3buttons"
+  gem.version     = Css3buttons::VERSION
+  gem.platform    = Gem::Platform::RUBY
+  gem.authors     = ["Nicholas Bruning"]
+  gem.email       = ["nicholas@bruning.com.au"]
+  gem.homepage    = "https://github.com/thetron/css3buttons_rails_helpers"
+  gem.summary     = %q{Easy, beautiful buttons, the CSS3 way.}
+  gem.description = %q{Rails helper methods and generators for the css3buttons by Michael Henriksen.}
 
-  s.rubyforge_project = "css3buttons"
+  gem.rubyforge_project = "css3buttons"
 
-  s.add_dependency 'actionpack', '>= 3.0.0'
+  gem.add_dependency 'actionpack', '>= 4.0.0'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  gem.files         = `git ls-files`.split("\n")
+  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  gem.require_paths = ["lib"]
 end

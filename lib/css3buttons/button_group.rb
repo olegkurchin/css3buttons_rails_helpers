@@ -1,7 +1,7 @@
 module Css3buttons
   class ButtonGroup
     include ActionView::Helpers::TagHelper
-    attr_reader :template, :button_count, :options
+    # attr_reader :template, :button_count, :options
 
     def initialize(template, options)
       @button_count = 0
